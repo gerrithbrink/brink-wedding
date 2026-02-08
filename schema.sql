@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS guests;
+CREATE TABLE IF NOT EXISTS guests (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  email TEXT,
+  rsvp_status TEXT,
+  message TEXT
+);
