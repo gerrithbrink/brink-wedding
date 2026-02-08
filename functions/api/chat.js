@@ -2,10 +2,10 @@ import { GoogleGenAI } from "@google/genai";
 
 // Ensure these details match constants.ts
 const WEDDING_DETAILS = {
-  coupleNames: "Oliver & Amelia",
-  date: "October 14, 2024",
-  venue: "The Whispering Pines Forest Hall",
-  address: "123 Woodland Drive, Emerald Valley, CA",
+  coupleNames: "Gerrit & Sara",
+  date: "9 May 2026",
+  venue: "Beyond the Moon",
+  address: "Wilderness, South Africa",
   schedule: [
     { time: "3:00 PM", event: "Ceremony in the Grove" },
     { time: "4:30 PM", event: "Cocktail Hour & Lawn Games" },
@@ -37,7 +37,7 @@ Rules:
 export async function onRequestPost(context) {
   try {
     const { message } = await context.request.json();
-    
+
     // In Cloudflare Pages Functions, environment variables are available on context.env
     // Ensure you have set this using 'npx wrangler pages secret put GEMINI_API_KEY'
     const apiKey = context.env.GEMINI_API_KEY;
@@ -51,7 +51,7 @@ export async function onRequestPost(context) {
     }
 
     const ai = new GoogleGenAI({ apiKey });
-    
+
     // Using gemini-3-flash-preview as recommended for basic text tasks
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
@@ -67,9 +67,9 @@ export async function onRequestPost(context) {
 
   } catch (e) {
     console.error("Gemini API Error:", e);
-    return new Response(JSON.stringify({ text: "I'm having a bit of trouble connecting to the forest network right now. Please try again later." }), { 
+    return new Response(JSON.stringify({ text: "I'm having a bit of trouble connecting to the forest network right now. Please try again later." }), {
       headers: { "Content-Type": "application/json" },
-      status: 500 
+      status: 500
     });
   }
 }

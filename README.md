@@ -1,4 +1,4 @@
-# Willow & Sage Wedding Website
+# The Brink Wedding Website (Gerrit & Sara)
 
 A rustic wedding website featuring an RSVP system backed by Cloudflare D1 and an AI Assistant powered by Google Gemini.
 

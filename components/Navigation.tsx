@@ -24,21 +24,20 @@ export const Navigation: React.FC = () => {
   };
 
   return (
-    <nav 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-sage-800/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-6'
-      }`}
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-sage-800/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center text-rustic-cream">
         <div className={`font-serif text-2xl tracking-wider transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0 md:opacity-100'}`}>
-          O & A
+          G & S
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           {NAV_LINKS.map((link) => (
-            <a 
-              key={link.label} 
+            <a
+              key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm uppercase tracking-widest hover:text-rustic-pink transition-colors relative group cursor-pointer"
@@ -50,7 +49,7 @@ export const Navigation: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-rustic-cream focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -69,7 +68,7 @@ export const Navigation: React.FC = () => {
         <div className="md:hidden bg-sage-800 absolute w-full border-t border-sage-700">
           <div className="flex flex-col py-4">
             {NAV_LINKS.map((link) => (
-              <a 
+              <a
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}

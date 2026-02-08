@@ -1,11 +1,11 @@
 import { SectionId } from './types';
 
 export const WEDDING_DETAILS = {
-  coupleNames: "Oliver & Amelia",
-  date: "October 14, 2024",
-  dateISO: "2024-10-14T15:00:00",
-  venue: "The Whispering Pines Forest Hall",
-  address: "123 Woodland Drive, Emerald Valley, CA",
+  coupleNames: "Gerrit & Sara",
+  date: "9 May 2026",
+  dateISO: "2026-05-09T15:00:00",
+  venue: "Beyond the Moon",
+  address: "Wilderness, South Africa",
   schedule: [
     { time: "3:00 PM", event: "Ceremony in the Grove" },
     { time: "4:30 PM", event: "Cocktail Hour & Lawn Games" },
