@@ -1,20 +1,63 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Willow & Sage Wedding Website
 
-# Run and deploy your AI Studio app
+A rustic wedding website featuring an RSVP system backed by Cloudflare D1 and an AI Assistant powered by Google Gemini.
 
-This contains everything you need to run your app locally.
+## 🚀 Deployment Checklist
 
-View your app in AI Studio: https://ai.studio/apps/drive/1i3asvghH6kEURiy9aV_4ppO74eGDJZri
+Follow these steps to deploy your application to Cloudflare Pages.
 
-## Run Locally
+### 1. Prerequisites
+Ensure you have Node.js installed and the Cloudflare Wrangler CLI.
+```bash
+npm install -g wrangler
+npm install
+```
 
-**Prerequisites:**  Node.js
+### 2. Login to Cloudflare
+```bash
+npx wrangler login
+```
 
+### 3. Set up the Database (D1)
+Create the database in your Cloudflare account.
+```bash
+npx wrangler d1 create brink-wedding-db
+```
+**Important:** Copy the `database_id` output from this command and update your `wrangler.toml` file where it says `database_id = "PLACEHOLDER_DB_ID"`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 4. Initialize the Database Schema
+Apply the SQL schema to create the guests table.
+```bash
+# For Local Development
+npx wrangler d1 execute brink-wedding-db --local --file=./schema.sql
+
+# For Production (Run this after you deploy, or now if the DB is created)
+npx wrangler d1 execute brink-wedding-db --remote --file=./schema.sql
+```
+
+### 5. Configure Secrets (Gemini API Key)
+You must set your Google Gemini API Key as a secret so it is available to the backend functions.
+```bash
+npx wrangler pages secret put GEMINI_API_KEY
+```
+When prompted, paste your actual API key (starts with `AIza...`).
+
+### 6. Deploy to Cloudflare Pages
+Deploy the application.
+```bash
+npx wrangler pages deploy .
+```
+
+## 🛠 Local Development
+To run the project locally with full support for the backend functions and database:
+
+```bash
+npx wrangler pages dev .
+```
+
+## 📂 Project Structure
+- **/components**: React UI components (Hero, RSVP, Chat).
+- **/functions**: Serverless backend (API) running on Cloudflare Workers.
+- **/services**: Frontend services to communicate with the API.
+- **schema.sql**: Database structure.
+- **wrangler.toml**: Cloudflare configuration.
