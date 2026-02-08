@@ -6,8 +6,6 @@ export interface GuestRSVP {
   attending: 'yes' | 'no' | 'maybe';
   dietaryRestrictions: string;
   songRequest: string;
-  plusOne: boolean;
-  plusOneName?: string;
 }
 
 export enum SectionId {

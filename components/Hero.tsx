@@ -12,16 +12,20 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section 
+    <section
       id={SectionId.HOME}
       className="relative h-screen min-h-[600px] flex items-center justify-center text-center px-4 overflow-hidden scroll-mt-28"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://picsum.photos/id/1047/1920/1080" 
-          alt="Forest Background" 
+        <img
+          src={WEDDING_DETAILS.images.hero}
+          alt="Forest Background"
           className="w-full h-full object-cover"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = "https://picsum.photos/id/1047/1920/1080";
+          }}
         />
         <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-sage-900/30"></div>
@@ -40,9 +44,9 @@ export const Hero: React.FC = () => {
           <span className="hidden md:inline text-sage-300">•</span>
           <span>{WEDDING_DETAILS.venue}</span>
         </div>
-        
+
         <div className="pt-8">
-          <a 
+          <a
             href={`#${SectionId.RSVP}`}
             onClick={handleScroll}
             className="inline-block px-8 py-3 border border-rustic-cream/50 text-rustic-cream hover:bg-rustic-cream hover:text-sage-800 transition-all duration-300 font-serif text-lg tracking-widest rounded-sm uppercase backdrop-blur-sm cursor-pointer"

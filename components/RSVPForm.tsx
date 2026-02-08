@@ -9,9 +9,7 @@ export const RSVPForm: React.FC = () => {
     email: '',
     attending: 'yes',
     dietaryRestrictions: '',
-    songRequest: '',
-    plusOne: false,
-    plusOneName: ''
+    songRequest: ''
   });
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -132,31 +130,6 @@ export const RSVPForm: React.FC = () => {
 
             {formData.attending !== 'no' && (
               <div className="space-y-6 animate-fade-in">
-
-                <div className="space-y-2 p-4 bg-sage-50/50 border border-sage-100 rounded">
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      id="plusOne"
-                      name="plusOne"
-                      checked={formData.plusOne}
-                      onChange={handleChange}
-                      className="w-5 h-5 text-sage-600 focus:ring-sage-500 border-gray-300 rounded"
-                    />
-                    <label htmlFor="plusOne" className="text-sage-800 font-medium">I am bringing a Plus One</label>
-                  </div>
-                  {formData.plusOne && (
-                    <input
-                      type="text"
-                      name="plusOneName"
-                      value={formData.plusOneName}
-                      onChange={handleChange}
-                      className="w-full mt-2 bg-white border border-sage-200 p-2 text-sm focus:outline-none focus:border-sage-500"
-                      placeholder="Name of your guest"
-                    />
-                  )}
-                </div>
-
                 <div className="space-y-2">
                   <label className="block text-sm font-bold text-sage-700 uppercase tracking-wide">Dietary Restrictions</label>
                   <textarea
@@ -198,8 +171,8 @@ export const RSVPForm: React.FC = () => {
               {status === 'submitting' ? 'Sending...' : 'Send RSVP'}
             </button>
           </form>
-        </div>
-      </div>
-    </section>
+        </div >
+      </div >
+    </section >
   );
 };
