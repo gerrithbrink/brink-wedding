@@ -16,7 +16,7 @@ export const WEDDING_DETAILS = {
   images: {
     hero: "/images/hero-bg1.jpg",
     details1: "/images/details_1.jpg",
-    details2: "/images/details-2.jpg",
+    details2: "/images/details_2.jpg",
   },
   registryLink: "#",
 };
