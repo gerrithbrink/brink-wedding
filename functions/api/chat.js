@@ -1,7 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-// We define the details here to ensure the serverless function 
-// is self-contained and doesn't rely on TypeScript compilation of constants.ts.
+// Ensure these details match constants.ts
 const WEDDING_DETAILS = {
   coupleNames: "Oliver & Amelia",
   date: "October 14, 2024",
@@ -38,10 +37,13 @@ Rules:
 export async function onRequestPost(context) {
   try {
     const { message } = await context.request.json();
+    
+    // In Cloudflare Pages Functions, environment variables are available on context.env
+    // Ensure you have set this using 'npx wrangler pages secret put GEMINI_API_KEY'
     const apiKey = context.env.GEMINI_API_KEY;
 
     if (!apiKey) {
-      console.error("Missing GEMINI_API_KEY in environment variables");
+      console.error("Missing GEMINI_API_KEY.");
       return new Response(JSON.stringify({ text: "I'm currently sleeping (Server Configuration Error). Please tell the developer to check the API Key!" }), {
         headers: { "Content-Type": "application/json" },
         status: 500
@@ -50,8 +52,7 @@ export async function onRequestPost(context) {
 
     const ai = new GoogleGenAI({ apiKey });
     
-    // We use generateContent for a stateless interaction. 
-    // This allows the function to be simple and robust.
+    // Using gemini-3-flash-preview as recommended for basic text tasks
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: message,

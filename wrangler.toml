@@ -5,7 +5,10 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "brink-wedding-db"
-database_id = "PLACEHOLDER_DB_ID" # Run 'npx wrangler d1 create brink-wedding-db' to get this ID
+# Run 'npx wrangler d1 info brink-wedding-db' to get your specific ID and paste it below
+database_id = "PLACEHOLDER_DB_ID" 
 
 [vars]
-GEMINI_API_KEY = "PLACEHOLDER_KEY_FOR_LOCAL_DEV" # Use 'npx wrangler pages secret put' for production
+# For local development only. 
+# For production, use: npx wrangler pages secret put GEMINI_API_KEY
+GEMINI_API_KEY = "PLACEHOLDER_KEY_FOR_LOCAL_DEV"
