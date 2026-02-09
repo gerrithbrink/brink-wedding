@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { WEDDING_DETAILS } from "../constants";
+import { WEDDING_DETAILS } from "../../constants";
 
 const SYSTEM_INSTRUCTION = `
 You are the AI Wedding Assistant for ${WEDDING_DETAILS.coupleNames}'s wedding.
