@@ -1,19 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-
-// Ensure these details match constants.ts
-const WEDDING_DETAILS = {
-  coupleNames: "Gerrit & Sara",
-  date: "9 May 2026",
-  venue: "Beyond the Moon",
-  address: "Wilderness, South Africa",
-  schedule: [
-    { time: "3:00 PM", event: "Ceremony in the Grove" },
-    { time: "4:30 PM", event: "Cocktail Hour & Lawn Games" },
-    { time: "6:00 PM", event: "Rustic Feast & Toasts" },
-    { time: "8:00 PM", event: "Dancing Under the Stars" },
-  ],
-  dressCode: "Rustic Formal (Earth tones encouraged, comfortable shoes for grass recommended)",
-};
+import { WEDDING_DETAILS } from "../constants";
 
 const SYSTEM_INSTRUCTION = `
 You are the AI Wedding Assistant for ${WEDDING_DETAILS.coupleNames}'s wedding.

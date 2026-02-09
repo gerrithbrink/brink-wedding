@@ -5,7 +5,7 @@ export const WEDDING_DETAILS = {
   date: "9 May 2026",
   dateISO: "2026-05-09T15:00:00",
   venue: "Beyond the Moon",
-  address: "Wilderness, South Africa",
+  address: "Hoekville, South Africa",
   schedule: [
     { time: "3:00 PM", event: "Ceremony in the Grove" },
     { time: "4:30 PM", event: "Cocktail Hour & Lawn Games" },
