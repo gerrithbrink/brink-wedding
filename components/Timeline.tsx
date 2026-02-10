@@ -34,15 +34,6 @@ const events: TimelineEvent[] = [
     description: "Whether it's breakfast in Boggoms Bay or exploring Nature's Valley, every adventure is better with you."
   },
   {
-    category: "Birthdays",
-    images: [
-      "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.jpg",
-      "/timelineImages/3_Birthdays/46_OtterHikeGerritBDay_20250419_133930264_iOS.jpg"
-    ],
-    title: "Birthday Celebrations",
-    description: "Celebrating another year of life and love. From 21st milestones to birthdays on the trail."
-  },
-  {
     category: "Springbok World Cup",
     images: [
       "/timelineImages/4_SpringBokWorldCup_2023/18_SpringbokSupporters_20231022_071331000_iOS.jpg",
@@ -52,10 +43,19 @@ const events: TimelineEvent[] = [
     description: "Cheering for the Green and Gold! United in spirit and celebration."
   },
   {
+    category: "Birthdays",
+    images: [
+      "/timelineImages/3_Birthdays/46_OtterHikeGerritBDay_20250419_133930264_iOS.jpg",
+      "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.jpg"
+    ],
+    title: "Birthday Celebrations",
+    description: "Celebrating another year of life and love. From 21st milestones to birthdays on the trail."
+  },
+  {
     category: "Gerrit's Graduation",
     images: [
-      "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.jpg",
-      "/timelineImages/5_GerritGraduation/28_GerritGraduation_20240328_141249000_iOS.jpg"
+      "/timelineImages/5_GerritGraduation/28_GerritGraduation_20240328_141249000_iOS.jpg",
+      "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.jpg"
     ],
     title: "Gerrit's Graduation",
     description: "A proud moment of achievement. Hard work paying off and new chapters beginning."
@@ -63,12 +63,12 @@ const events: TimelineEvent[] = [
   {
     category: "Cute Dates",
     images: [
+      "/timelineImages/6_CuteDates/51_Churchhaven_20250926_163221298_iOS.jpg",
       "/timelineImages/6_CuteDates/17_CapeTownLife_20231022_184411.jpg",
       "/timelineImages/6_CuteDates/25_NewYearsEve2023_20231231_230200.jpg",
       "/timelineImages/6_CuteDates/26_AfrikaansOpDIePlatteland_20240210_175558.jpg",
       "/timelineImages/6_CuteDates/34_IceCreamDate_20240907_220452.jpg",
       "/timelineImages/6_CuteDates/50_Pottery_20250801_211310.jpg",
-      "/timelineImages/6_CuteDates/51_Churchhaven_20250926_163221298_iOS.jpg",
       "/timelineImages/6_CuteDates/53_JosephMusical_20251023_194753.jpg"
     ],
     title: "Sweet Moments",
@@ -77,8 +77,8 @@ const events: TimelineEvent[] = [
   {
     category: "Hikes",
     images: [
-      "/timelineImages/7_Hikes/22_StrandLooperHike_20231215_104542.jpg",
       "/timelineImages/7_Hikes/23_StrandLooperHike2Bags_20231215_132353(0).jpg",
+      "/timelineImages/7_Hikes/22_StrandLooperHike_20231215_104542.jpg",
       "/timelineImages/7_Hikes/24_StrandLooperHike_20231215_134004.jpg",
       "/timelineImages/7_Hikes/29_Bos400Hike_20240526_081331000_iOS.jpg",
       "/timelineImages/7_Hikes/31_TrainBridgeToVicBay_20240617_094120.jpg",
@@ -112,12 +112,12 @@ const events: TimelineEvent[] = [
   {
     category: "Sara's Graduation",
     images: [
+      "/timelineImages/9_SaraGraduation/IMG_2514.JPG",
       "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.jpg",
       "/timelineImages/9_SaraGraduation/55_SaraGraduation_20251208_140524140_iOS.jpg",
       "/timelineImages/9_SaraGraduation/IMG_2318.JPG",
       "/timelineImages/9_SaraGraduation/IMG_2374.JPG",
-      "/timelineImages/9_SaraGraduation/IMG_2416.JPG",
-      "/timelineImages/9_SaraGraduation/IMG_2514.JPG"
+      "/timelineImages/9_SaraGraduation/IMG_2416.JPG"
     ],
     title: "Sara's Graduation",
     description: "Engineering degree in hand! A testament to hard work, dedication, and brilliance."
@@ -125,9 +125,9 @@ const events: TimelineEvent[] = [
   {
     category: "The Engagement",
     images: [
+      "/timelineImages/10_Engagement/64_EngagementBeachPhotoShoot_20251229_181745000_iOS.jpg",
       "/timelineImages/10_Engagement/62_EngagementForest_20251229_112744.jpg",
       "/timelineImages/10_Engagement/63_EngagementPicnic_20251229_154956.jpg",
-      "/timelineImages/10_Engagement/64_EngagementBeachPhotoShoot_20251229_181745000_iOS.jpg",
       "/timelineImages/10_Engagement/65_EngagementBeachPhotoShoot_IMG_2626.JPG",
       "/timelineImages/10_Engagement/67_EngagementBeachPhotoShoot_IMG_2631.JPG",
       "/timelineImages/10_Engagement/69_EngagementBeachPhotoShoot_IMG_2657.JPG",
