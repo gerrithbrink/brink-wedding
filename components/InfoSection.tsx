@@ -17,16 +17,16 @@ export const InfoSection: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-sage-50/50 p-6 border border-sage-100 rounded-sm shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-serif text-sage-700 mb-2">When</h3>
-              <p className="text-sage-800">{WEDDING_DETAILS.date}</p>
-              <p className="text-sm text-sage-500 mt-1">Ceremony begins promptly at 3:00 PM</p>
+            <div className="bg-rustic-rose/30 p-6 border border-rustic-rose rounded-sm shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-serif text-rustic-brown mb-2">When</h3>
+              <p className="text-sage-900">{WEDDING_DETAILS.date}</p>
+              <p className="text-sm text-sage-600 mt-1">Ceremony begins promptly at 3:00 PM</p>
             </div>
 
-            <div className="bg-sage-50/50 p-6 border border-sage-100 rounded-sm shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-xl font-serif text-sage-700 mb-2">Where</h3>
-              <p className="text-sage-800">{WEDDING_DETAILS.venue}</p>
-              <p className="text-sm text-sage-500 mt-1">{WEDDING_DETAILS.address}</p>
+            <div className="bg-rustic-rose/30 p-6 border border-rustic-rose rounded-sm shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-serif text-rustic-brown mb-2">Where</h3>
+              <p className="text-sage-900">{WEDDING_DETAILS.venue}</p>
+              <p className="text-sm text-sage-600 mt-1">{WEDDING_DETAILS.address}</p>
             </div>
           </div>
 
