@@ -17,7 +17,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg"
     ],
     title: "Dancing Through Life",
-    description: "From our very first dance to many more spun around the floor. Each step bringing us closer together."
+    description: "From teaching Sara to sokkie to House Dances and dancing in the kitchen. Dancing has always been a part of our love story."
   },
   {
     category: "Adventures",
@@ -31,7 +31,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/2_Adventures_2023/52_ChurchhavenSailing_20250927_144035000_iOS.jpg"
     ],
     title: "Exploring Together",
-    description: "Whether it's breakfast in Boggoms Bay or exploring Nature's Valley, every adventure is better with you."
+    description: "Whether it is sailing in Churchhaven, a getaway to listen to the \"best Afrikaans hits\", or hiking with friends little weekend adventures have brought so much joy into everyday life."
   },
   {
     category: "Springbok World Cup",
@@ -40,7 +40,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/4_SpringBokWorldCup_2023/19_SpringbokSupporters_20231028_194821.jpg"
     ],
     title: "Bokke!",
-    description: "Cheering for the Green and Gold! United in spirit and celebration."
+    description: "This English girl was introduced into the world of afrikaans people watching Rugby."
   },
   {
     category: "Birthdays",
@@ -49,7 +49,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.jpg"
     ],
     title: "Birthday Celebrations",
-    description: "Celebrating another year of life and love. From 21st milestones to birthdays on the trail."
+    description: "For Gerrit's 26th birthday which we celebrated on the beautiful Otter trail, Sara gave Gerrit the best gift of all… a cake made with BEER"
   },
   {
     category: "Gerrit's Graduation",
@@ -58,7 +58,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.jpg"
     ],
     title: "Gerrit's Graduation",
-    description: "A proud moment of achievement. Hard work paying off and new chapters beginning."
+    description: "Gerrit graduated with a Masters and there was nothing but smiles! ***coffees in office"
   },
   {
     category: "Cute Dates",
@@ -72,7 +72,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/6_CuteDates/53_JosephMusical_20251023_194753.jpg"
     ],
     title: "Sweet Moments",
-    description: "It's the little things—ice cream dates, pottery classes, and quiet evenings—that make life sweet."
+    description: "Sara and Gerrit never miss an opportunity to go on a cute date. The best of all is an ice-cream date! After which Gerrit can then spend the next 30 minutes listening to Sara talk about how good her flavours were."
   },
   {
     category: "Hikes",
@@ -95,7 +95,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/7_Hikes/59_DrakensbergHikeCave_20251222_104221.jpg"
     ],
     title: "Hiking Trails",
-    description: "Conquering mountains and walking coastlines. Every trail has a story, and we're writing ours one step at a time."
+    description: "Gerrit introduced Sara to multi-day hiking and oh boy it was a hit. From getting the worst tonsilitis in history (confirmed by the doctor) to making it back with only one knee Sara continued to explore her new found passion and proceeded to  complete two more hikes. Will there be a number five?"
   },
   {
     category: "Weddings",
@@ -107,7 +107,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/8_Weddings/56_JJWedding_20251216_201418522_iOS.jpg"
     ],
     title: "Wedding Guests",
-    description: "Witnessing love stories unfold. Celebrating with friends and dreaming of our own special day."
+    description: "Sara and Gerrit have never missed the opportunity to celebrate the marriage of friends…. Add"
   },
   {
     category: "Sara's Graduation",
@@ -120,7 +120,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/9_SaraGraduation/IMG_2416.JPG"
     ],
     title: "Sara's Graduation",
-    description: "Engineering degree in hand! A testament to hard work, dedication, and brilliance."
+    description: "Sara FINALLY graduated! An accomplishment …."
   },
   {
     category: "The Engagement",
@@ -139,7 +139,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/10_Engagement/78_EngagementBeachPhotoShoot_IMG_2713.JPG"
     ],
     title: "Assume the Position",
-    description: "The easiest 'Yes'. A magical day in the forest, a picnic, and a sunset beach shoot to mark the beginning of our forever."
+    description: "On the 28th of December somewhere in the forest next to a gentle running stream with a coffee in hand and some of Sara's faviourite snacks, Gerrit got down on one knee and proposed. The day was nothing but perfect!"
   }
 ];
 
