@@ -135,7 +135,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/10_Engagement/76_EngagementBeachPhotoShoot_IMG_2707.JPG",
       "/timelineImages/10_Engagement/78_EngagementBeachPhotoShoot_IMG_2713.JPG"
     ],
-    title: "Gerrit takes a knee...",
+    title: "Gerrie takes a knee...",
     description: "On the 28th of December somewhere in the forest next to a gentle running stream with a coffee in hand and some of Sara's faviourite snacks, Gerrit got down on one knee and proposed. The day was nothing but perfect!"
   }
 ];
