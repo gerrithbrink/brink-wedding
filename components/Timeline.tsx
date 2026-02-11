@@ -169,7 +169,6 @@ export const Timeline: React.FC = () => {
     <section className="py-24 bg-rustic-cream overflow-hidden" id="story">
       <div className="container mx-auto px-4 max-w-6xl relative">
         <div className="text-center mb-24">
-          <p className="text-sage-400 tracking-[0.3em] uppercase text-xs mb-4 font-sans">Our Story</p>
           <h2 className="text-4xl md:text-5xl font-serif text-sage-900 tracking-wide">Our Journey</h2>
         </div>
 
