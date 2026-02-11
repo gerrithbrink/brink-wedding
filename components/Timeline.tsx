@@ -13,7 +13,8 @@ const events: TimelineEvent[] = [
     images: [
       "/timelineImages/1_First_Dances_2022-2023/1_FirstDance_20220818_211721307_iOS.jpg",
       "/timelineImages/1_First_Dances_2022-2023/10_SaraHuisDance_20230812_091958000_iOS.jpg",
-      "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg"
+      "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg",
+      "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.jpg"
     ],
     title: "First Dances",
     description: "From teaching Sara to sokkie to House Dances and dancing in the kitchen. Dancing has always been a part of our love story."
@@ -104,14 +105,13 @@ const events: TimelineEvent[] = [
       "/timelineImages/8_Weddings/54_GretheWedding_20251117_151735000_iOS.jpg",
       "/timelineImages/8_Weddings/56_JJWedding_20251216_201418522_iOS.jpg"
     ],
-    title: "Wedding Guests",
+    title: "Wedding Fever",
     description: "Sara and Gerrit have never missed the opportunity to celebrate their friends getting married. Somewhere along the way Gerrit got a terrible case of \"trou koors\"."
   },
   {
     category: "Sara's Graduation",
     images: [
       "/timelineImages/9_SaraGraduation/IMG_2514.JPG",
-      "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.jpg",
       "/timelineImages/9_SaraGraduation/55_SaraGraduation_20251208_140524140_iOS.jpg",
       "/timelineImages/9_SaraGraduation/IMG_2318.JPG",
       "/timelineImages/9_SaraGraduation/IMG_2374.JPG",
@@ -136,7 +136,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/10_Engagement/78_EngagementBeachPhotoShoot_IMG_2713.JPG"
     ],
     title: "Gerrie takes a knee...",
-    description: "On the 28th of December somewhere in the forest next to a gentle running stream with a coffee in hand and some of Sara's faviourite snacks, Gerrit got down on one knee and proposed. The day was nothing but perfect!"
+    description: "On the 28th of December somewhere in the forest next to a gentle running stream with a coffee in hand and some of Sara's favourite snacks, Gerrit got down on one knee and proposed. The day was nothing but perfect!"
   }
 ];
 
