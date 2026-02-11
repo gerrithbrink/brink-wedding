@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { SectionId } from '../types';
 
 interface TimelineEvent {
   category: string;
@@ -163,7 +164,7 @@ export const Timeline: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-rustic-cream overflow-hidden" id="story">
+    <section className="py-24 bg-rustic-cream overflow-hidden" id={SectionId.STORY}>
       <div className="container mx-auto px-4 max-w-6xl relative">
         <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-serif text-sage-900 tracking-wide">Our Journey</h2>

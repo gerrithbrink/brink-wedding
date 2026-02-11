@@ -13,7 +13,8 @@ export enum SectionId {
   DETAILS = 'details',
   RSVP = 'rsvp',
   QA = 'qa',
-  REGISTRY = 'registry'
+  REGISTRY = 'registry',
+  STORY = 'story'
 }
 
 export interface ChatMessage {

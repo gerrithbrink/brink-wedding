@@ -19,7 +19,9 @@ export const WEDDING_DETAILS = {
 export const NAV_LINKS = [
   { label: 'Home', href: `#${SectionId.HOME}` },
   { label: 'Details', href: `#${SectionId.DETAILS}` },
+  { label: 'Our Journey', href: `#${SectionId.STORY}` },
   { label: 'RSVP', href: `#${SectionId.RSVP}` },
+  { label: 'Registry', href: `#${SectionId.REGISTRY}` },
 ];
 
 export const MOCK_API_DELAY = 1500;
