@@ -7,7 +7,7 @@ export const WEDDING_DETAILS = {
   venue: "Beyond the Moon",
   address: "Hoekville, South Africa",
   schedule: "Stay Tuned...",
-  dressCode: "Semi-Formal",
+  dressCode: "Forest Garden Party",
   images: {
     hero: "/images/hero-bg1.jpg",
     details1: "/images/details_1.jpg",
