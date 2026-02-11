@@ -6,8 +6,7 @@ const INSPO_IMAGES = [
   '/images/forestGardenParty/ValensoleNew-6.webp',
   '/images/forestGardenParty/64fa4ae937402$!1125x.jpg',
   '/images/forestGardenParty/3decd323920546caa186af92e752050b~tplv-sdweummd6v-text-logo-v1_QGdtdmlzaW9ucw==_q75.jpeg',
-  '/images/forestGardenParty/garden-party-semi-formal-suggestions-v0-c31lty5t1iae1.jpg',
-  '/images/forestGardenParty/e365e05719d0221aa5218685359155f4.jpg',
+  '/images/forestGardenParty/garden-party-semi-formal-suggestions-v0-c31lty5t1iae1.jpg'
 ];
 
 export const InfoSection: React.FC = () => {
