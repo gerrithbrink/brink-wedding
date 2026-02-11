@@ -12,7 +12,7 @@ export const WEDDING_DETAILS = {
     { time: "6:00 PM", event: "Rustic Feast & Toasts" },
     { time: "8:00 PM", event: "Dancing Under the Stars" },
   ],
-  dressCode: "Rustic Formal (Earth tones encouraged, comfortable shoes for grass recommended)",
+  dressCode: "Semi-Formal",
   images: {
     hero: "/images/hero-bg1.jpg",
     details1: "/images/details_1.jpg",
