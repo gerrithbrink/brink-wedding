@@ -32,15 +32,21 @@ export const InfoSection: React.FC = () => {
 
           <div className="space-y-4">
             <h3 className="text-2xl font-serif text-sage-600 border-b border-sage-200 pb-2">Schedule</h3>
-            <ul className="space-y-4">
-              {WEDDING_DETAILS.schedule.map((item, idx) => (
-                <li key={idx} className="flex items-center gap-4 text-sage-800">
-                  <span className="font-bold text-rustic-brown w-20 text-right">{item.time}</span>
-                  <span className="w-px h-4 bg-sage-300"></span>
-                  <span className="font-light">{item.event}</span>
-                </li>
-              ))}
-            </ul>
+            {Array.isArray(WEDDING_DETAILS.schedule) ? (
+              <ul className="space-y-4">
+                {WEDDING_DETAILS.schedule.map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-4 text-sage-800">
+                    <span className="font-bold text-rustic-brown w-20 text-right">{item.time}</span>
+                    <span className="w-px h-4 bg-sage-300"></span>
+                    <span className="font-light">{item.event}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sage-800 font-light italic py-2">
+                {WEDDING_DETAILS.schedule}
+              </p>
+            )}
           </div>
 
           <div className="bg-rustic-rose/30 p-6 border border-rustic-rose rounded-sm shadow-sm hover:shadow-md transition-shadow">

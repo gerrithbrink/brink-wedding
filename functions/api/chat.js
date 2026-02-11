@@ -10,7 +10,7 @@ Key Information:
 - Venue: ${WEDDING_DETAILS.venue}
 - Address: ${WEDDING_DETAILS.address}
 - Dress Code: ${WEDDING_DETAILS.dressCode}
-- Schedule: ${WEDDING_DETAILS.schedule.map(s => `${s.time}: ${s.event}`).join(', ')}
+- Schedule: ${Array.isArray(WEDDING_DETAILS.schedule) ? WEDDING_DETAILS.schedule.map(s => `${s.time}: ${s.event}`).join(', ') : WEDDING_DETAILS.schedule}
 
 Rules:
 1. Answer questions about the wedding details accurately based on the info above.

@@ -6,12 +6,7 @@ export const WEDDING_DETAILS = {
   dateISO: "2026-05-09T15:00:00",
   venue: "Beyond the Moon",
   address: "Hoekville, South Africa",
-  schedule: [
-    { time: "3:00 PM", event: "Ceremony in the Grove" },
-    { time: "4:30 PM", event: "Cocktail Hour & Lawn Games" },
-    { time: "6:00 PM", event: "Rustic Feast & Toasts" },
-    { time: "8:00 PM", event: "Dancing Under the Stars" },
-  ],
+  schedule: "Stay Tuned...",
   dressCode: "Semi-Formal",
   images: {
     hero: "/images/hero-bg1.jpg",
