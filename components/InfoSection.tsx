@@ -59,7 +59,7 @@ export const InfoSection: React.FC = () => {
               )}
             </div>
 
-            <div className="bg-rustic-rose/30 p-6 border border-rustic-rose rounded-sm shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-sage-200/40 p-6 border border-sage-300 rounded-sm shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-serif text-rustic-brown mb-2">Dress Code</h3>
               <p className="text-sage-900 font-light italic">
                 {WEDDING_DETAILS.dressCode}
