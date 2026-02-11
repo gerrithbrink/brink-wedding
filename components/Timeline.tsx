@@ -9,14 +9,13 @@ interface TimelineEvent {
 
 const events: TimelineEvent[] = [
   {
-    category: "First Dances",
+    category: "Dancing",
     images: [
       "/timelineImages/1_First_Dances_2022-2023/1_FirstDance_20220818_211721307_iOS.jpg",
-      "/timelineImages/1_First_Dances_2022-2023/2_EveryNationSokkie_20221001_212107203_iOS.jpg",
       "/timelineImages/1_First_Dances_2022-2023/10_SaraHuisDance_20230812_091958000_iOS.jpg",
       "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg"
     ],
-    title: "Dancing Through Life",
+    title: "First Dances",
     description: "From teaching Sara to sokkie to House Dances and dancing in the kitchen. Dancing has always been a part of our love story."
   },
   {
