@@ -5,6 +5,7 @@ import { InfoSection } from './components/InfoSection';
 import { Timeline } from './components/Timeline';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
+import { GiftRegistry } from './components/GiftRegistry';
 import { WeddingAI } from './components/WeddingAI';
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <InfoSection />
         <Timeline />
         <RSVPForm />
+        <GiftRegistry />
       </main>
 
       <Footer />
