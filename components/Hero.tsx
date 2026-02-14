@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
         <img
           src={WEDDING_DETAILS.images.hero}
           alt="Forest Background"
-          className="w-full h-full object-cover object-center md:object-[80%_80%]"
+          className="w-full h-full object-cover object-[50%_35%] md:object-[80%_80%]"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.src = "https://picsum.photos/id/1047/1920/1080";
