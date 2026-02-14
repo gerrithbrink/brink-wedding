@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-rustic-cream space-y-6 max-w-4xl mx-auto animate-fade-in-up">
+      <div className="relative z-10 text-rustic-cream space-y-6 max-w-4xl mx-auto animate-fade-in-up -mt-32 md:mt-0">
         <p className="text-xl md:text-2xl tracking-[0.2em] uppercase font-light text-rustic-pink">
           We are getting married
         </p>
