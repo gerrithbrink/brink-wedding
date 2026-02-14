@@ -303,22 +303,28 @@ const ImageGallery: React.FC<{ images: string[]; objectPositions?: string[] }> =
 
   if (images.length === 0) return null;
 
-  const currentObjectPosition = objectPositions?.[activeIndex] || 'center';
-
   return (
     <div className="relative group max-w-lg mx-auto w-full aspect-[4/3] bg-sage-100 rounded-lg overflow-hidden shadow-lg ring-1 ring-sage-200/50">
-      <img
-        src={images[activeIndex]}
-        alt={`Gallery image ${activeIndex + 1}`}
-        className="w-full h-full object-cover transition-opacity duration-500"
-        style={{ objectPosition: currentObjectPosition }}
-      />
+      {/* Render all images stacked; cross-fade via opacity */}
+      {images.map((src, idx) => (
+        <img
+          key={src}
+          src={src}
+          alt={`Gallery image ${idx + 1}`}
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out"
+          style={{
+            objectPosition: objectPositions?.[idx] || 'center',
+            opacity: idx === activeIndex ? 1 : 0,
+          }}
+          loading={idx <= 1 ? 'eager' : 'lazy'}
+        />
+      ))}
 
       {images.length > 1 && (
         <>
           <button
             onClick={(e) => { e.stopPropagation(); prevImage(); }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur hover:bg-white rounded-full flex items-center justify-center text-sage-800 shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 transform hover:scale-105"
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur hover:bg-white rounded-full flex items-center justify-center text-sage-800 shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 transform hover:scale-105 z-10"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -326,17 +332,18 @@ const ImageGallery: React.FC<{ images: string[]; objectPositions?: string[] }> =
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); nextImage(); }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur hover:bg-white rounded-full flex items-center justify-center text-sage-800 shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 transform hover:scale-105"
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur hover:bg-white rounded-full flex items-center justify-center text-sage-800 shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 transform hover:scale-105 z-10"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
           </button>
 
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
             {images.map((_, idx) => (
-              <div
+              <button
                 key={idx}
+                onClick={() => setActiveIndex(idx)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeIndex ? 'bg-white w-4' : 'bg-white/50'}`}
               />
             ))}
