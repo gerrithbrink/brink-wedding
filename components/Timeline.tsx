@@ -6,6 +6,7 @@ interface TimelineEvent {
   images: string[];
   title: string;
   description: string;
+  objectPositions?: string[];
 }
 
 const events: TimelineEvent[] = [
@@ -17,6 +18,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg",
       "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.jpg"
     ],
+    objectPositions: ["center", "center", "center", "center"],
     title: "First Dances",
     description: "From teaching Sara to sokkie to House Dances and dancing in the kitchen. Dancing has always been a part of our love story."
   },
@@ -31,6 +33,15 @@ const events: TimelineEvent[] = [
       "/timelineImages/2_Adventures_2023/15_CederbergArchHike_20231001_074900000_iOS.jpg",
       "/timelineImages/2_Adventures_2023/52_ChurchhavenSailing_20250927_144035000_iOS.jpg"
     ],
+    objectPositions: [
+      "center 50%", // Breakfast - faces are at the top
+      "center",
+      "center 10%",
+      "center",
+      "center",
+      "center 40%", // Hike - faces are higher up
+      "center 30%"  // Sailing - faces are at the top
+    ],
     title: "Exploring Together",
     description: "Whether it is sailing in Churchhaven, a getaway to listen to the \"best Afrikaans hits\", or hiking with friends, little weekend adventures have brought so much joy into everyday life."
   },
@@ -40,6 +51,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/4_SpringBokWorldCup_2023/18_SpringbokSupporters_20231022_071331000_iOS.jpg",
       "/timelineImages/4_SpringBokWorldCup_2023/19_SpringbokSupporters_20231028_194821.jpg"
     ],
+    objectPositions: ["center", "center"],
     title: "Bokke!",
     description: "This English girl was introduced into the world of afrikaans people watching Rugby."
   },
@@ -49,6 +61,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/3_Birthdays/46_OtterHikeGerritBDay_20250419_133930264_iOS.jpg",
       "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.jpg"
     ],
+    objectPositions: ["center", "center"],
     title: "Birthday Celebrations",
     description: "For Gerrit's 26th birthday, which we celebrated on the beautiful Otter trail, Sara gave Gerrit the best gift of all… a cake made with BEER."
   },
@@ -58,6 +71,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/5_GerritGraduation/28_GerritGraduation_20240328_141249000_iOS.jpg",
       "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.jpg"
     ],
+    objectPositions: ["center", "center"],
     title: "Gerrit's Graduation",
     description: "Even though Sara spent most of Gerrits final year distracting him with coffees in the office he still manged to graduated with a Masters!"
   },
@@ -72,6 +86,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/6_CuteDates/50_Pottery_20250801_211310.jpg",
       "/timelineImages/6_CuteDates/53_JosephMusical_20251023_194753.jpg"
     ],
+    objectPositions: ["center", "center", "center", "center", "center", "center", "center"],
     title: "Sweet Moments",
     description: "Sara and Gerrit never miss an opportunity to go on a cute date. The best of all is an ice-cream date! After which Gerrit can then spend the next 30 minutes listening to Sara talk about how good her flavours were."
   },
@@ -94,6 +109,23 @@ const events: TimelineEvent[] = [
       "/timelineImages/7_Hikes/58_DrakensbergHikeSaraFlowers_20251222_091911.jpg",
       "/timelineImages/7_Hikes/59_DrakensbergHikeCave_20251222_104221.jpg"
     ],
+    objectPositions: [
+      "center",
+      "center 45%",
+      "center 100%",
+      "center 90%",
+      "center 80%",
+      "center 40%",
+      "center",
+      "center",
+      "center",
+      "center",
+      "center",
+      "center",
+      "center",
+      "center 10%",
+      "center 30%",
+    ],
     title: "Hiking Trails",
     description: "Gerrit introduced Sara to multi-day hiking and oh boy it was a hit. From getting the worst tonsilitis in history (confirmed by the doctor) to making it back with only one knee, Sara continued to explore her new found passion and proceeded to complete two more hikes. Will there be a number five?"
   },
@@ -106,6 +138,13 @@ const events: TimelineEvent[] = [
       "/timelineImages/8_Weddings/54_GretheWedding_20251117_151735000_iOS.jpg",
       "/timelineImages/8_Weddings/56_JJWedding_20251216_201418522_iOS.jpg"
     ],
+    objectPositions: [
+      "center 80%",
+      "center",
+      "center 47%",
+      "center 90%",
+      "center 80%"
+    ],
     title: "Wedding Fever",
     description: "Sara and Gerrit have never missed the opportunity to celebrate their friends getting married. Somewhere along the way Gerrit got a terrible case of \"trou koors\"."
   },
@@ -117,6 +156,13 @@ const events: TimelineEvent[] = [
       "/timelineImages/9_SaraGraduation/IMG_2318.JPG",
       "/timelineImages/9_SaraGraduation/IMG_2374.JPG",
       "/timelineImages/9_SaraGraduation/IMG_2416.JPG"
+    ],
+    objectPositions: [
+      "center",
+      "center",
+      "center 10%",
+      "center 100%",
+      "center"
     ],
     title: "Sara's Graduation",
     description: "Sara FINALLY graduated and this meant Gerrit could FINALLY pop the question!"
@@ -135,6 +181,19 @@ const events: TimelineEvent[] = [
       "/timelineImages/10_Engagement/75_EngagementBeachPhotoShoot_IMG_2699.JPG",
       "/timelineImages/10_Engagement/76_EngagementBeachPhotoShoot_IMG_2707.JPG",
       "/timelineImages/10_Engagement/78_EngagementBeachPhotoShoot_IMG_2713.JPG"
+    ],
+    objectPositions: [
+      "center",
+      "center 77%",
+      "center 25%",
+      "center 90%",
+      "center 80%",
+      "center 40%",
+      "center",
+      "center 10%", // Heads were cut off
+      "center 80%",
+      "center 90%",
+      "center 60%",
     ],
     title: "Gerrie takes a knee...",
     description: "On the 28th of December somewhere in the forest next to a gentle running stream with a coffee in hand and some of Sara's favourite snacks, Gerrit got down on one knee and proposed. The day was nothing but perfect!"
@@ -190,7 +249,7 @@ export const Timeline: React.FC = () => {
                   {isEven ? (
                     <TextContent event={event} />
                   ) : (
-                    <ImageGallery images={event.images} />
+                    <ImageGallery images={event.images} objectPositions={event.objectPositions} />
                   )}
                 </div>
 
@@ -202,7 +261,7 @@ export const Timeline: React.FC = () => {
                 {/* Right Side (Image if Even, Text if Odd) */}
                 <div className={`flex-1 w-full text-center ${!isEven ? 'md:text-right' : 'md:text-left'} order-3 md:order-3`}>
                   {isEven ? (
-                    <ImageGallery images={event.images} />
+                    <ImageGallery images={event.images} objectPositions={event.objectPositions} />
                   ) : (
                     <TextContent event={event} />
                   )}
@@ -236,7 +295,7 @@ const TextContent: React.FC<{ event: TimelineEvent }> = ({ event }) => (
   </div>
 );
 
-const ImageGallery: React.FC<{ images: string[] }> = ({ images }) => {
+const ImageGallery: React.FC<{ images: string[]; objectPositions?: string[] }> = ({ images, objectPositions }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextImage = () => setActiveIndex((prev) => (prev + 1) % images.length);
@@ -244,12 +303,15 @@ const ImageGallery: React.FC<{ images: string[] }> = ({ images }) => {
 
   if (images.length === 0) return null;
 
+  const currentObjectPosition = objectPositions?.[activeIndex] || 'center';
+
   return (
     <div className="relative group max-w-lg mx-auto w-full aspect-[4/3] bg-sage-100 rounded-lg overflow-hidden shadow-lg ring-1 ring-sage-200/50">
       <img
         src={images[activeIndex]}
         alt={`Gallery image ${activeIndex + 1}`}
         className="w-full h-full object-cover transition-opacity duration-500"
+        style={{ objectPosition: currentObjectPosition }}
       />
 
       {images.length > 1 && (
