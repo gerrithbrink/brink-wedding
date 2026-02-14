@@ -245,7 +245,7 @@ export const Timeline: React.FC = () => {
                   }`}
               >
                 {/* Left Side (Text if Even, Image if Odd) */}
-                <div className={`flex-1 w-full text-center ${isEven ? 'md:text-right' : 'md:text-left'} order-2 md:order-1`}>
+                <div className={`flex-1 w-full text-center ${isEven ? 'md:text-right' : 'md:text-left'} ${isEven ? 'order-3' : 'order-1'} md:order-1`}>
                   {isEven ? (
                     <TextContent event={event} />
                   ) : (
@@ -254,12 +254,12 @@ export const Timeline: React.FC = () => {
                 </div>
 
                 {/* Center Marker */}
-                <div className="relative z-10 flex items-center justify-center shrink-0 order-1 md:order-2">
+                <div className="relative z-10 flex items-center justify-center shrink-0 order-2 md:order-2">
                   <div className={`w-4 h-4 rounded-full bg-white border-4 border-sage-400 shadow-md ${isVisible ? 'scale-100' : 'scale-0'} transition-transform duration-500 delay-300`} />
                 </div>
 
                 {/* Right Side (Image if Even, Text if Odd) */}
-                <div className={`flex-1 w-full text-center ${!isEven ? 'md:text-right' : 'md:text-left'} order-3 md:order-3`}>
+                <div className={`flex-1 w-full text-center ${!isEven ? 'md:text-right' : 'md:text-left'} ${isEven ? 'order-1' : 'order-3'} md:order-3`}>
                   {isEven ? (
                     <ImageGallery images={event.images} objectPositions={event.objectPositions} />
                   ) : (
