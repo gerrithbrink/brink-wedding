@@ -3,10 +3,10 @@ import { WEDDING_DETAILS } from '../constants';
 import { SectionId } from '../types';
 
 const INSPO_IMAGES = [
-  '/images/forestGardenParty/ValensoleNew-6.webp',
-  '/images/forestGardenParty/64fa4ae937402$!1125x.jpg',
-  '/images/forestGardenParty/3decd323920546caa186af92e752050b~tplv-sdweummd6v-text-logo-v1_QGdtdmlzaW9ucw==_q75.jpeg',
-  '/images/forestGardenParty/garden-party-semi-formal-suggestions-v0-c31lty5t1iae1.jpg'
+  '/images/forestGardenParty/ValensoleNew-6.webp', // Already webp, but let's be consistent if script touches it
+  '/images/forestGardenParty/64fa4ae937402$!1125x.webp',
+  '/images/forestGardenParty/3decd323920546caa186af92e752050b~tplv-sdweummd6v-text-logo-v1_QGdtdmlzaW9ucw==_q75.webp',
+  '/images/forestGardenParty/garden-party-semi-formal-suggestions-v0-c31lty5t1iae1.webp'
 ];
 
 export const InfoSection: React.FC = () => {
@@ -192,8 +192,8 @@ export const InfoSection: React.FC = () => {
                   key={idx}
                   onClick={() => setInspoIndex(idx)}
                   className={`w-2.5 h-2.5 rounded-full transition-all cursor-pointer ${idx === inspoIndex
-                      ? 'bg-rustic-cream scale-110'
-                      : 'bg-rustic-cream/40 hover:bg-rustic-cream/60'
+                    ? 'bg-rustic-cream scale-110'
+                    : 'bg-rustic-cream/40 hover:bg-rustic-cream/60'
                     }`}
                   aria-label={`View image ${idx + 1}`}
                 />

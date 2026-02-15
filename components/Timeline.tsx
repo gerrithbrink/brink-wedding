@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
       "/timelineImages/1_First_Dances_2022-2023/1_FirstDance_20220818_211721307_iOS.jpg",
       "/timelineImages/1_First_Dances_2022-2023/10_SaraHuisDance_20230812_091958000_iOS.jpg",
       "/timelineImages/1_First_Dances_2022-2023/3_HuisFonsDance_20230516_132504000_iOS.jpg",
-      "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.jpg"
+      "/timelineImages/9_SaraGraduation/33_SaraFinalEngineeringDance_20240802_190544000_iOS.webp"
     ],
     objectPositions: ["center", "center", "center", "center"],
     title: "First Dances",
@@ -27,11 +27,11 @@ const events: TimelineEvent[] = [
     images: [
       "/timelineImages/2_Adventures_2023/5_BoggomsBayBreakfast_20230521_135245000_iOS.jpg",
       "/timelineImages/2_Adventures_2023/6_WellingtonWeekend_20230611_203444000_iOS.jpg",
-      "/timelineImages/2_Adventures_2023/7_NatureVallySundowners_20230717_151327719_iOS.jpg",
-      "/timelineImages/2_Adventures_2023/8_1_NaturesValleyLagoon.jpg",
-      "/timelineImages/2_Adventures_2023/11_CangoCaves_20230915_124921.jpg",
-      "/timelineImages/2_Adventures_2023/15_CederbergArchHike_20231001_074900000_iOS.jpg",
-      "/timelineImages/2_Adventures_2023/52_ChurchhavenSailing_20250927_144035000_iOS.jpg"
+      "/timelineImages/2_Adventures_2023/7_NatureVallySundowners_20230717_151327719_iOS.webp",
+      "/timelineImages/2_Adventures_2023/8_1_NaturesValleyLagoon.webp",
+      "/timelineImages/2_Adventures_2023/11_CangoCaves_20230915_124921.webp",
+      "/timelineImages/2_Adventures_2023/15_CederbergArchHike_20231001_074900000_iOS.webp",
+      "/timelineImages/2_Adventures_2023/52_ChurchhavenSailing_20250927_144035000_iOS.webp"
     ],
     objectPositions: [
       "center 50%", // Breakfast - faces are at the top
@@ -49,7 +49,7 @@ const events: TimelineEvent[] = [
     category: "Springbok World Cup",
     images: [
       "/timelineImages/4_SpringBokWorldCup_2023/18_SpringbokSupporters_20231022_071331000_iOS.jpg",
-      "/timelineImages/4_SpringBokWorldCup_2023/19_SpringbokSupporters_20231028_194821.jpg"
+      "/timelineImages/4_SpringBokWorldCup_2023/19_SpringbokSupporters_20231028_194821.webp"
     ],
     objectPositions: ["center", "center"],
     title: "Bokke!",
@@ -58,8 +58,8 @@ const events: TimelineEvent[] = [
   {
     category: "Birthdays",
     images: [
-      "/timelineImages/3_Birthdays/46_OtterHikeGerritBDay_20250419_133930264_iOS.jpg",
-      "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.jpg"
+      "/timelineImages/3_Birthdays/46_OtterHikeGerritBDay_20250419_133930264_iOS.webp",
+      "/timelineImages/3_Birthdays/9_Sara21steBirthdayDate_20230806_071954000_iOS.webp"
     ],
     objectPositions: ["center", "center"],
     title: "Birthday Celebrations",
@@ -68,8 +68,8 @@ const events: TimelineEvent[] = [
   {
     category: "Gerrit's Graduation",
     images: [
-      "/timelineImages/5_GerritGraduation/28_GerritGraduation_20240328_141249000_iOS.jpg",
-      "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.jpg"
+      "/timelineImages/5_GerritGraduation/28_GerritGraduation_20240328_141249000_iOS.webp",
+      "/timelineImages/5_GerritGraduation/20_UniversityOffice_20231116_165357.webp"
     ],
     objectPositions: ["center", "center"],
     title: "Gerrit's Graduation",
@@ -78,12 +78,12 @@ const events: TimelineEvent[] = [
   {
     category: "Cute Dates",
     images: [
-      "/timelineImages/6_CuteDates/51_Churchhaven_20250926_163221298_iOS.jpg",
-      "/timelineImages/6_CuteDates/17_CapeTownLife_20231022_184411.jpg",
-      "/timelineImages/6_CuteDates/25_NewYearsEve2023_20231231_230200.jpg",
-      "/timelineImages/6_CuteDates/26_AfrikaansOpDIePlatteland_20240210_175558.jpg",
-      "/timelineImages/6_CuteDates/34_IceCreamDate_20240907_220452.jpg",
-      "/timelineImages/6_CuteDates/50_Pottery_20250801_211310.jpg",
+      "/timelineImages/6_CuteDates/51_Churchhaven_20250926_163221298_iOS.webp",
+      "/timelineImages/6_CuteDates/17_CapeTownLife_20231022_184411.webp",
+      "/timelineImages/6_CuteDates/25_NewYearsEve2023_20231231_230200.webp",
+      "/timelineImages/6_CuteDates/26_AfrikaansOpDIePlatteland_20240210_175558.webp",
+      "/timelineImages/6_CuteDates/34_IceCreamDate_20240907_220452.webp",
+      "/timelineImages/6_CuteDates/50_Pottery_20250801_211310.webp",
       "/timelineImages/6_CuteDates/53_JosephMusical_20251023_194753.jpg"
     ],
     objectPositions: ["center", "center", "center", "center", "center", "center", "center"],
@@ -93,21 +93,21 @@ const events: TimelineEvent[] = [
   {
     category: "Hikes",
     images: [
-      "/timelineImages/7_Hikes/23_StrandLooperHike2Bags_20231215_132353(0).jpg",
-      "/timelineImages/7_Hikes/24_StrandLooperHike_20231215_134004.jpg",
-      "/timelineImages/7_Hikes/29_Bos400Hike_20240526_081331000_iOS.jpg",
-      "/timelineImages/7_Hikes/31_TrainBridgeToVicBay_20240617_094120.jpg",
-      "/timelineImages/7_Hikes/38_LionsHeadHike_20241013_081716.jpg",
-      "/timelineImages/7_Hikes/39_AmatolaHike_20241220_135410.jpg",
-      "/timelineImages/7_Hikes/40_AmatolaHike_20241220_155832.jpg",
+      "/timelineImages/7_Hikes/23_StrandLooperHike2Bags_20231215_132353(0).webp",
+      "/timelineImages/7_Hikes/24_StrandLooperHike_20231215_134004.webp",
+      "/timelineImages/7_Hikes/29_Bos400Hike_20240526_081331000_iOS.webp",
+      "/timelineImages/7_Hikes/31_TrainBridgeToVicBay_20240617_094120.webp",
+      "/timelineImages/7_Hikes/38_LionsHeadHike_20241013_081716.webp",
+      "/timelineImages/7_Hikes/39_AmatolaHike_20241220_135410.webp",
+      "/timelineImages/7_Hikes/40_AmatolaHike_20241220_155832.webp",
       "/timelineImages/7_Hikes/41_AmatolaHike_20241222_135957.jpg",
       "/timelineImages/7_Hikes/42_AmatolaHike_20241224_083602000_iOS.jpg",
-      "/timelineImages/7_Hikes/44_OtterHike_20250419_073044.jpg",
-      "/timelineImages/7_Hikes/45_OtterHike_20250419_101222490_iOS.jpg",
-      "/timelineImages/7_Hikes/47_OtterHike_20250421_091844.jpg",
-      "/timelineImages/7_Hikes/57_DrakensbergHike_20251218_075059000_iOS.jpg",
-      "/timelineImages/7_Hikes/58_DrakensbergHikeSaraFlowers_20251222_091911.jpg",
-      "/timelineImages/7_Hikes/59_DrakensbergHikeCave_20251222_104221.jpg"
+      "/timelineImages/7_Hikes/44_OtterHike_20250419_073044.webp",
+      "/timelineImages/7_Hikes/45_OtterHike_20250419_101222490_iOS.webp",
+      "/timelineImages/7_Hikes/47_OtterHike_20250421_091844.webp",
+      "/timelineImages/7_Hikes/57_DrakensbergHike_20251218_075059000_iOS.webp",
+      "/timelineImages/7_Hikes/58_DrakensbergHikeSaraFlowers_20251222_091911.webp",
+      "/timelineImages/7_Hikes/59_DrakensbergHikeCave_20251222_104221.webp"
     ],
     objectPositions: [
       "center",
@@ -132,10 +132,10 @@ const events: TimelineEvent[] = [
   {
     category: "Weddings",
     images: [
-      "/timelineImages/8_Weddings/30_RobbieElzaanWedding_20240615_134224029_iOS.jpg",
+      "/timelineImages/8_Weddings/30_RobbieElzaanWedding_20240615_134224029_iOS.webp",
       "/timelineImages/8_Weddings/48_WianWedding_20250504_194521000_iOS.jpg",
-      "/timelineImages/8_Weddings/49_WianWedding_20250707_180133000_iOS.jpg",
-      "/timelineImages/8_Weddings/54_GretheWedding_20251117_151735000_iOS.jpg",
+      "/timelineImages/8_Weddings/49_WianWedding_20250707_180133000_iOS.webp",
+      "/timelineImages/8_Weddings/54_GretheWedding_20251117_151735000_iOS.webp",
       "/timelineImages/8_Weddings/56_JJWedding_20251216_201418522_iOS.jpg"
     ],
     objectPositions: [
@@ -151,11 +151,11 @@ const events: TimelineEvent[] = [
   {
     category: "Sara's Graduation",
     images: [
-      "/timelineImages/9_SaraGraduation/IMG_2514.JPG",
-      "/timelineImages/9_SaraGraduation/55_SaraGraduation_20251208_140524140_iOS.jpg",
-      "/timelineImages/9_SaraGraduation/IMG_2318.JPG",
-      "/timelineImages/9_SaraGraduation/IMG_2374.JPG",
-      "/timelineImages/9_SaraGraduation/IMG_2416.JPG"
+      "/timelineImages/9_SaraGraduation/IMG_2514.webp",
+      "/timelineImages/9_SaraGraduation/55_SaraGraduation_20251208_140524140_iOS.webp",
+      "/timelineImages/9_SaraGraduation/IMG_2318.webp",
+      "/timelineImages/9_SaraGraduation/IMG_2374.webp",
+      "/timelineImages/9_SaraGraduation/IMG_2416.webp"
     ],
     objectPositions: [
       "center",
@@ -170,9 +170,9 @@ const events: TimelineEvent[] = [
   {
     category: "The Engagement",
     images: [
-      "/timelineImages/10_Engagement/64_EngagementBeachPhotoShoot_20251229_181745000_iOS.jpg",
-      "/timelineImages/10_Engagement/62_EngagementForest_20251229_112744.jpg",
-      "/timelineImages/10_Engagement/63_EngagementPicnic_20251229_154956.jpg",
+      "/timelineImages/10_Engagement/64_EngagementBeachPhotoShoot_20251229_181745000_iOS.webp",
+      "/timelineImages/10_Engagement/62_EngagementForest_20251229_112744.webp",
+      "/timelineImages/10_Engagement/63_EngagementPicnic_20251229_154956.webp",
       "/timelineImages/10_Engagement/67_EngagementBeachPhotoShoot_IMG_2631.JPG",
       "/timelineImages/10_Engagement/69_EngagementBeachPhotoShoot_IMG_2657.JPG",
       "/timelineImages/10_Engagement/70_EngagementBeachPhotoShoot_IMG_2662.JPG",

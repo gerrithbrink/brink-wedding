@@ -9,9 +9,9 @@ export const WEDDING_DETAILS = {
   schedule: "Stay Tuned...",
   dressCode: "Forest Garden Party",
   images: {
-    hero: "/images/hero-bg1.jpg",
-    details1: "/images/details_1.jpg",
-    details2: "/images/details_2.jpg",
+    hero: "/images/hero-bg1.webp",
+    details1: "/images/details_1.webp",
+    details2: "/images/details_2.webp",
   },
   registryLink: "#",
 };
