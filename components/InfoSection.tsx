@@ -32,7 +32,7 @@ export const InfoSection: React.FC = () => {
             <div className="text-center md:text-left">
               <h2 className="text-4xl md:text-5xl font-serif text-sage-600 mb-6">The Details</h2>
               <p className="text-lg text-sage-800/80 leading-relaxed font-light">
-                We invite you to join us in the heart of the forest for a rustic celebration of love, nature, and new beginnings.
+                We invite you to join us in the forest to celebrate our marriage.
               </p>
             </div>
 

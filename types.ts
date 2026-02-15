@@ -16,10 +16,3 @@ export enum SectionId {
   REGISTRY = 'registry',
   STORY = 'story'
 }
-
-export interface ChatMessage {
-  id: string;
-  role: 'user' | 'model';
-  text: string;
-  timestamp: Date;
-}

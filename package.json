@@ -1,7 +1,7 @@
 {
   "name": "willow-sage-wedding",
   "version": "1.0.0",
-  "description": "Wedding website with RSVP and AI Assistant",
+  "description": "Wedding website with RSVP",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^12.1.0"

@@ -7,7 +7,3 @@ binding = "DB"
 database_name = "brink-wedding-db"
 # Run 'npx wrangler d1 info brink-wedding-db' to get your specific ID and paste it below
 database_id = "77263095-2f5d-4fe2-a04a-d448a2af5054"
-
-[vars]
-# For local development only. 
-# For production, use: npx wrangler pages secret put GEMINI_API_KEY
