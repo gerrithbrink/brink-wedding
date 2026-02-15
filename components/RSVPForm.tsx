@@ -70,7 +70,7 @@ export const RSVPForm: React.FC = () => {
         <div className="max-w-3xl mx-auto bg-rustic-cream shadow-2xl rounded-sm overflow-hidden">
           <div className="bg-rustic-pink/30 p-8 text-center border-b border-sage-200">
             <h2 className="text-3xl md:text-4xl font-serif text-sage-800">R.S.V.P.</h2>
-            <p className="text-sage-600 mt-2 font-light">Kindly respond by April 1st</p>
+            <p className="text-sage-600 mt-2 font-light">Kindly respond by 1 March 2026</p>
           </div>
 
           <form onSubmit={handleSubmit} className="p-8 md:p-12 space-y-6">
