@@ -124,7 +124,6 @@ export const RSVPForm: React.FC = () => {
               >
                 <option value="yes">Joyfully Accepts</option>
                 <option value="no">Regretfully Declines</option>
-                <option value="maybe">Unsure (Will know soon)</option>
               </select>
             </div>
 

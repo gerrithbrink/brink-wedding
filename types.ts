@@ -3,7 +3,7 @@ export interface GuestRSVP {
   firstName: string;
   lastName: string;
   email: string;
-  attending: 'yes' | 'no' | 'maybe';
+  attending: 'yes' | 'no';
   dietaryRestrictions: string;
   songRequest: string;
 }
